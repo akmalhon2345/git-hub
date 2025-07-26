@@ -1,0 +1,125 @@
+/* Asosiy container uchun */
+.overview_wrapper.repo {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+    background-color: #0d1117;
+  }
+  
+  /* Grid layout */
+  .overview_grid1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+  }
+  
+  /* Kartochkalar */
+  .grid_cards1 {
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    padding: 1rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .grid_cards1:hover {
+    background-color: #21262d;
+    transform: translateY(-4px);
+  }
+  
+  /* Header */
+  .card_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Meta info */
+  .language_tag {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #c9d1d9;
+  }
+  
+  .language_color.css {
+    background-color: #563d7c;
+  }
+  .language_color.js {
+    background-color: yellow;
+  }
+  .language_color.html {
+    background-color: #ff3c00;
+  }
+  
+  .public_tag {
+    background-color: #30363d;
+    padding: 2px 8px;
+    font-size: 12px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    color: #8b949e;
+  }
+  
+  /* ✨ RESPONSIVE - 768px */
+  @media (max-width: 768px) {
+    .overview_wrapper.repo {
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    .overview_grid1 {
+      grid-template-columns: 1fr;
+    }
+  
+    .grid_cards1 {
+      padding: 1rem;
+    }
+  
+    .card_header h1 {
+      font-size: 1rem;
+    }
+  
+    .grid_cards1 h2 {
+      font-size: 0.95rem;
+    }
+  }
+/* 468px va kichikroq ekranlar uchun */
+@media (max-width: 468px) {
+    .contaner4 {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      padding: 0.8rem;
+    }
+  
+    .card2, .card3 {
+      width: 100%;
+      padding: 1rem;
+    }
+  
+    .card-card, .card-cards {
+      padding: 0;
+    }
+    
+  
+    h1 {
+      font-size: 1.2rem;
+    }
+  
+    p {
+      font-size: 0.9rem;
+      line-height: 1.4;
+    }
+  
+    button  button{
+      width: 300px;;
+      padding: 0.6rem 1rem;
+      font-size: 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+  }
+    

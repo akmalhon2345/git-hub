@@ -1,0 +1,176 @@
+/* packages.css */
+
+.contaner65 {
+    padding: 50px;
+    background-color: #0d1117; /* GitHub dark bg */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    color: #fff;
+  }
+  
+  /* Intro Card (Top message) */
+  .card56 {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0d1117; /* GitHub dark bg */
+    border: 1px solid #30363d;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card56 h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .card56 p {
+    font-size: 16px;
+    color: #c9d1d9;
+    line-height: 1.6;
+    text-align: center;
+    max-width: 600px;
+  }
+  
+  /* Package Cards */
+  .card45 {
+    background-color: #0d1117; /* GitHub dark bg */
+    border:1px solid #0366d6;
+    padding: 25px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08);
+  }
+  
+  .card45:hover {
+    background-color: #30363d;
+  }
+  
+  .card45 h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  .res{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card45 p {
+    font-size: 14px;
+    color: #c9d1d9;
+    margin-bottom: 15px;
+    line-height: 1.6;
+  }
+  
+  .card45 button {
+    background-color: #2da44e;
+    color: #ffffff;
+    padding: 10px 18px;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .card45 button:hover {
+    background-color: #218639;
+  }
+  @media screen and (max-width: 768px) {
+    .packages {
+      padding: 15px;
+    }
+  
+    .contaner65 {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+  
+    .card45 {
+      width: calc(70% -10px); /* ikki karta yonma-yon */
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+    }
+  
+    .card45 h1 {
+      font-size: 1.4rem;
+    }
+  
+    .card45 p {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+  
+    .card45 button {
+      padding: 10px 15px;
+      font-size: 1rem;
+    }
+  
+    .res h1,
+    .card56 h1 {
+      font-size: 1.6rem;
+    }
+  
+    .card56 p {
+      font-size: 1.1rem;
+    }
+  }
+  
+  @media screen and (max-width: 468px) {
+    .packages {
+      padding: 10px;
+    }
+  
+    .contaner65 {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .card45 {
+      width: 100% !important; /* to'liq kenglik */
+      padding: 15px;
+      box-sizing: border-box;
+      font-size: 0.95rem;
+    }
+  
+    .card45 h1 {
+      font-size: 1.2rem;
+    }
+  
+    .card45 p {
+      font-size: 0.9rem;
+      line-height: 1.4;
+    }
+  
+    .card45 button {
+      width: 100%;
+      padding: 12px;
+      font-size: 1rem;
+    }
+  
+    .res h1,
+    .card56 h1 {
+      font-size: 1.3rem;
+    }
+  
+    .card56 p {
+      font-size: 1rem;
+    }
+  }
+  
+  

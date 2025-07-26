@@ -1,0 +1,126 @@
+/* star.css */
+
+.container-star {
+    padding: 40px;
+    background-color: #0d1117;
+    color: #ffffff;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  .star-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .star-buttons button {
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+    margin-left: 10px;
+    background-color: #2da44e;
+    color: #fff;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+
+  
+  .star-buttons button:hover {
+    background-color: #218639;
+  }
+  
+  .star-empty {
+    background-color: #161b22;
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .star-empty h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .star-empty p {
+    font-size: 14px;
+    color: #c9d1d9;
+  }
+  
+  .star-title {
+    margin-bottom: 20px;
+  }
+  
+  .star-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .star-controls input {
+    padding: 6px 55px;
+    border-radius: 6px;
+    border: 1px solid #30363d;
+    background-color: #0d1117;
+    color: white;
+    outline: none;
+  }
+  
+  .star-controls button {
+    background-color: #21262d;
+    color: white;
+    border: 1px solid #30363d;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s ease;
+  }
+  
+  .star-controls button:hover {
+    background-color: #30363d;
+  }
+  /* star.css */
+
+
+  
+  /* Responsive styles for devices <= 768px */
+  @media screen and (max-width: 768px) {
+    .star-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  
+    .star-buttons {
+      width: 100%;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+    }
+  
+    .star-controls {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .star-controls input[type="text"],
+    .star-controls button {
+      width: 100%;
+    }
+  
+    .star-empty h1 {
+      font-size: 1.5rem;
+    }
+  
+    .star-empty p {
+      font-size: 1rem;
+    }
+  }
+  
+  

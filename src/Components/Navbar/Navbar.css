@@ -1,0 +1,244 @@
+/* navbar.css */
+
+/* Reset and base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0d1117; /* GitHub dark bg */
+    color: #c9d1d9; /* Light text */
+  }
+  
+  /* Main container */
+  .contaner {
+    height: 80px;
+    max-width: 1700px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: flex;
+    border-bottom: 1px solid #30363d; /* subtle separation */
+  }
+  
+  /* Card wrapper (left + right) */
+  .card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  /* Left - Logo and brand */
+  .left h1 {
+    display: flex;
+    align-items: center;
+    font-size: 1.7rem;
+    font-weight: 700;
+    gap: 0.6rem;
+    cursor: default;
+  }
+  
+  /* Right section - search input + icons */
+  .right {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+  }
+  
+  /* Search input styling */
+  .right input {
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    border: 1.5px solid #c9d1d9;
+    background-color: #21262d;
+    color: #c9d1d9;
+    font-size: 0.95rem;
+    width: 220px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .right input::placeholder {
+    color: #8b949e;
+    font-style: italic;
+  }
+  
+  .right input:focus {
+    outline: none;
+    background-color: #30363d;
+    border-color: #58a6ff;
+  }
+  
+  /* Icons in right */
+  .right svg {
+    font-size: 22px;
+    cursor: pointer;
+    color: #8b949e;
+    transition: color 0.25s ease, transform 0.2s ease;
+  }
+  
+  .right svg:hover {
+    color: #58a6ff;
+    transform: scale(1.1);
+  }
+  
+  /* Profile image */
+  .right img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    cursor: pointer;
+    object-fit: cover;
+    border: 2px solid #58a6ff;
+    transition: transform 0.2s ease;
+  }
+  
+  .right img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Bottom navigation bar */
+  .componest {
+    max-width: 1700px;
+    height: 50px;
+    font-size: 1.1rem;
+    border-left: none;
+    border-right: none;
+    border-top: 1.5px solid #30363d;
+    border-bottom: 1.5px solid#30363d; 
+    display: flex;
+    align-items: center;
+    padding: 0 1.5rem;
+  }
+  
+  /* Bottom nav list */
+  .componest ul {
+    list-style: none;
+    display: flex;
+    gap: 2.5rem;
+    width: 100%;
+    max-width: 900px;
+    padding: 0;
+  }
+  
+  /* Bottom nav items */
+  .componest li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    color: #8b949e;
+    font-weight: 600;
+    padding-bottom: 0.4rem;
+    border-bottom: 3px solid transparent;
+    transition: color 0.25s ease, border-color 0.25s ease;
+    user-select: none;
+  }
+  
+.link{
+    color: white;
+    text-decoration: none;
+}
+
+  .componest li:hover {
+    color: #58a6ff;
+    border-bottom-color: #58a6ff;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 900px) {
+    .contaner {
+      padding: 0 1rem;
+    }
+    .right input {
+      width: 140px;
+    }
+    .componest ul {
+      gap: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .contaner {
+      padding: 0 1rem;
+    }
+  
+    .right input {
+      width: 130px;
+    }
+  
+    .right svg {
+      font-size: 20px;
+    }
+  
+    .right img {
+      width: 32px;
+      height: 32px;
+    }
+  
+    .componest ul {
+      gap: 2rem;
+      /* flex-wrap: wrap; */
+      justify-content: center;
+    }
+  
+    .componest li {
+      font-size: 1rem;
+    }
+  }
+  @media (max-width: 468px) {
+    .contaner {
+      padding: 0 0.5rem;
+      height: auto;
+      /* flex-direction: column; */
+      gap: 0.5rem;
+    }
+  
+    .card {
+      /* flex-direction: column; */
+
+      gap: 0.8rem;
+    }
+  
+    .left h1 {
+      font-size: 1.4rem;
+    }
+  
+    .right {
+      gap: 0.8rem;
+    }
+  
+    .right input {
+      width: 100%;
+      font-size: 0.9rem;
+    }
+  
+    .right svg {
+      font-size: 18px;
+    }
+  
+    .right img {
+      width: 28px;
+      height: 28px;
+    }
+  
+    .componest {
+       
+      height: auto;
+      padding: 0.8rem 1rem;
+    }
+  
+    .componest ul {
+      align-items: flex-start;
+      gap: 0.8rem;
+    }
+  
+    .componest li {
+      font-size: 0.95rem;
+      padding-bottom: 0.2rem;
+    }
+  }
+    
+ 

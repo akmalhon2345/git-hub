@@ -1,0 +1,307 @@
+/* Flex layout: sidebar + overview yonma-yon */
+.overview_wrapper {
+    display: flex;
+    min-height: auto;
+    color: #c9d1d9;
+  }
+  
+  /* Asosiy Overview qism */
+  .overview_container {
+    flex: 1;
+    padding-top: 50px ; 
+  }
+  
+  /* Yuqori qism */
+  .over_top {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+  }
+
+  .over_top p{
+    color: rgb(113, 113, 239);
+    cursor: pointer;
+  }
+
+  .over_top p:hover{
+    text-decoration: underline;
+    transition-duration: 0.9s;
+  }
+  
+  /* Grid kartalar */
+  .overview_grid {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
+    gap: 1rem;
+  }
+  
+  .grid_cards {
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    padding: 1rem;
+    border-radius: 8px;
+    height: 140px;
+  }
+  .grid_cards {
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    padding: 1rem 1.2rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+  }
+  
+  .grid_cards:hover {
+    background-color: #21262d;
+    transform: translateY(-4px);
+  }
+  
+  /* Title */
+  .grid_cards h1 {
+    font-size: 1.1rem;
+    color: #58a6ff;
+    margin-bottom: 0.3rem;
+  }
+  
+  /* Description */
+  .grid_cards h2 {
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: #8b949e;
+    margin-bottom: 1rem;
+  }
+  
+  /* Meta info */
+  .repo_meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+/* h1 va public tag yonma-yon joylashuvi */
+.card_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.3rem;
+  }
+  
+  /* Public label */
+  .public_tag {
+    font-size: 0.75rem;
+    background-color: #30363d;
+    color: #8b949e;
+    padding: 0.3rem 0.6rem;
+    border-radius: 3px;
+    text-transform: uppercase;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  /* Language tag */
+  .language_tag {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    color: #c9d1d9;
+    padding-top: 30px;
+  }
+  
+  /* Circle for language */
+  .language_color {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  .language_color.css{
+    background-color: #563d7c; 
+  }
+  .language_color.js{
+    background-color: yellow;
+  }
+  .language_color.html{
+    background-color: rgb(255, 60, 0); 
+  }
+  .contribution-activity {
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    background-color: #161b22;
+
+    padding-top: 30px;
+    margin-top: 20px;
+    font-family: 'Segoe UI', sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  }
+  
+  .contribution-summary {
+    width: 95%;
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    /* border-bottom: 1px solid #ddd; */
+    padding-bottom: 10px;
+  }
+  
+  .contribution-summary h1 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .icon-text {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #7d7a7a;
+  }
+  
+  .repository {
+display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+    background-color: #161b22;
+    padding: 15px;
+    border-radius: 6px;
+    /* border: 1px solid #ddd; */
+    margin-top: 15px;
+    transition: box-shadow 0.3s;
+  }
+  
+  .repository:hover {
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  }
+  
+  .repo-name {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #0366d6;
+  }
+  
+  .language, .date {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 4px;
+  }
+  .button2 {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .button2 button {
+    background-color: #161b22;
+    color: white;
+    border: none;
+    padding: 5px 00px;
+    font-size:10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 100;
+    border: 1px solid #ccc;
+  }
+  .button2 button{
+width: 1000px;
+height: 40px;
+
+  }
+
+  
+  .button2 button:hover {
+    transform: translateY(-1px);
+  }
+  
+  .button2 button:active {
+    transform: translateY(0);
+  }
+  
+  .button2 + p {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #586069;
+    margin-top: 10px;
+  }
+  
+  
+
+  
+ 
+  /* ✅ Ekran ≤ 768px: planshetlar */
+@media (max-width: 768px) {
+    .overview_wrapper {
+      flex-direction: column;
+    }
+  
+    .overview_grid {
+       
+      grid-template-columns: repeat(auto-fill, minmax(600px, 2fr));
+
+    }
+  
+    .over_top {
+      flex-direction: column;
+      /* align-items: flex-start; */
+      justify-content: center;
+      display: flex;
+      gap: 10px;
+    }
+  
+    .button2 button {
+      width: 100%;
+      font-size: 13px;
+    }
+    .grid_cards {
+        /* Masalan, kichikroq ekranlarda qatorga o‘tkazish */
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: flex-start;
+      }
+    
+  
+    .repo_meta {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 5px;
+    }
+  }
+  
+  /* ✅ Ekran ≤ 468px: telefonlar */
+  @media (max-width: 468px) {
+   
+  
+    .grid_cards h1 {
+      font-size: 1rem;
+    }
+  
+    .grid_cards h2 {
+      font-size: 0.85rem;
+    }
+  
+    .button2 button {
+      font-size: 12px;
+      padding: 8px 14px;
+    }
+  
+    .language_tag {
+      font-size: 0.8rem;
+    }
+  
+    .contribution-summary  {
+      font-size: 1.3rem;
+    }
+  }
+  
+  

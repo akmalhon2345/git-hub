@@ -1,0 +1,101 @@
+/* Components/Project/project.css */
+.contaner4 {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .card2, .card3 {
+    width: 950px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  .q{
+    margin-top: 10px;
+    width: 150px;
+    height: 40px;
+    background-color: #21262d;
+
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  button {
+    margin-top: 10px;
+    width: 150px;
+    height: 40px;
+    background-color: #2da44e;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .card-card{
+    width: 480px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .card-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 200px;
+  }
+  /* Responsive - Tablet breakpoint (768px) */
+@media (max-width: 768px) {
+    .contaner4 {
+      grid-template-columns: 1fr; /* ikki ustundan birga */
+      padding: 1rem;
+    }
+  
+    .card2, .card3 {
+      padding: 1rem;
+    }
+  
+    .card2 h1, .card3 h1 {
+      font-size: 1.3rem;
+    }
+  
+    .card2 p, .card3 p {
+      font-size: 0.95rem;
+    }
+  
+    button, .q {
+      width: 100%; /* tugmalar to‘liq eni egallaydi */
+      font-size: 1rem;
+    }
+  }
+  
+  /* Responsive - Mobile breakpoint (468px) */
+  @media (max-width: 468px) {
+    .contaner4 {
+      padding: 0.8rem;
+    }
+  
+    .card2 h1, .card3 h1 {
+      font-size: 1.1rem;
+    }
+  
+    .card2 p, .card3 p {
+      font-size: 0.85rem;
+    }
+  
+    button, .q {
+      font-size: 0.95rem;
+      padding: 0.5rem 1rem;
+    }
+  
+    .card2, .card3 {
+      padding: 0.8rem;
+    }
+  }
+  
