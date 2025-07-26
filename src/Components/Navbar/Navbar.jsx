@@ -1,4 +1,4 @@
-import './navbar.css'
+import './Navbar.css'
 import { FaGithub } from "react-icons/fa"
 import { GoCopilot, GoIssueOpened, GoGitPullRequest } from "react-icons/go"
 import { FaPlus } from "react-icons/fa6"
